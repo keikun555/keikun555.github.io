@@ -1,3 +1,6 @@
+# vim .sw[a-z] files
+*.sw[a-z]
+
 # Others
 startbootstrap-resume-gh-pages/
 startbootstrap-resume-gh-pages/*
