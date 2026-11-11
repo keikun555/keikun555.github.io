@@ -102,6 +102,9 @@
 						>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#talks">Talks</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#education"
 							>Education</a
 						>
@@ -143,18 +146,17 @@
 						Last updated November 10, 2026
 					</div>
 					<p class="mb-3">
-					  A <b>fourth year Ph.D. candidate at Cornell University</b> researching in
-						<b>programming languages</b>.
+						I am a <b>fourth-year Ph.D. candidate</b> in Computer Science at
+						Cornell University, advised by <a href="https://justinhsu.net/">Justin Hsu</a>.
 					</p>
 					<p class="mb-3">
-						Developing formal verification tools to prove critical safety and
-						liveness properties of hybrid systems.
-					</p>
-					<p class="mb-3">
-						Fluent in Python, C, C++, Z3, OpenMPI, and Japanese.
+						My research develops discrete methods for verifying continuous-time
+						systems, with logics that prove temporal and probabilistic properties of
+						cyber-physical and stochastic systems.
 					</p>
 					<p class="mb-5">
-						Former networking software engineer.
+						Before Cornell, I was a software engineer at Pure Storage (now Everpure),
+						and I received my B.A. from Swarthmore College.
 					</p>
 					<ul class="list-inline list-social-icons mb-0">
 						<li class="list-inline-item">
@@ -209,6 +211,57 @@
 							</div>
 						</div>
 					</div>
+			</section>
+
+			<section
+				class="resume-section p-3 p-lg-5 d-flex flex-column"
+				id="talks"
+			>
+				<div class="my-auto">
+					<h2 class="mb-5">Talks</h2>
+
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">A Hoare Logic for Continuous-Time Stochastic Systems</h3>
+							<div class="subheading mb-3"><a href="https://njpls.org/nov2026.html">NJPLS Nov 2026</a></div>
+							<details>
+								<summary>Abstract</summary>
+								<p class="mt-3">
+									Continuous-time stochastic processes like Brownian motion model noise in the
+									physical world, from particles in a fluid to interest rates and stock prices.
+									We have many tools for reasoning about probabilistic programs, but it remains
+									unclear how to apply them to continuous-time stochastic processes.
+									In this talk I will try to convince you that we can reason about these
+									processes the way we reason about programs: by writing them as ordinary
+									probabilistic programs with a small time step <i>dt</i> and taking <i>dt</i> to 0.
+								</p>
+								<p>
+									I will define a continuous semantics for pWhile-<i>dt</i>, a probabilistic imperative
+									language with a time step variable <i>dt</i>, by collecting the limit points of its
+									standard program semantics as <i>dt</i> approaches to 0.
+									I will present a Hoare logic over our continuous semantics in which properties
+									proved on the standard semantics for small <i>dt</i> transfer to the continuous
+									semantics.
+									To demonstrate our logic, we will verify properties of Brownian motion and
+									geometric Brownian motion, using loop invariants and approximate invariants.
+									Finally, I will present a prototype implementation that applies off-the-shelf
+									probabilistic program analysis tools to reason about continuous-time stochastic
+									processes.
+								</p>
+								<p class="mb-0">This is joint work with Justin Hsu.</p>
+							</details>
+						</div>
+					</div>
+
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">
+								A Nonstandard Temporal Logic for Continuous-Time Verification
+							</h3>
+							<div class="subheading mb-3"><a href="https://hisashi-aratake.gitlab.io/event/cscat2025#%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0">CSCAT 2025</a> &middot; Kyoto University &middot; <a href="https://pl.cs.cornell.edu/pldg/2025fa/">Cornell University PLDG</a></div>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<section
